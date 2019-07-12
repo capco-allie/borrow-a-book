@@ -70,6 +70,10 @@ export class ListBooksComponent implements OnInit {
     } else if(listLength > paginatorSize ){
       this.PAGINATOR_BUTTON.style.display = "block";
     }
+    
+    if(this.PAGINATOR >= listLength){
+      this.PAGINATOR_BUTTON.style.display = "none";
+    }
   }
 
   clearListView(){
