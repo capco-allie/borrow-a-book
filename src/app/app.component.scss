@@ -1,0 +1,40 @@
+.list{
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.list_action {
+    margin-top: 8pt;
+}
+
+.list__item {
+    display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+    margin-bottom: 15px;
+    margin-right: 10pt;
+    width: 30%;
+    position: relative;
+    list-style-type: none;
+    @media (max-width: 728px){
+        width: 100%;
+    }
+}
+
+.figure{
+    align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+.figure_caption{
+    font-size: 11pt;
+}
+
+.figure_image {
+    width: 150pt;
+    height: 188pt;
+}

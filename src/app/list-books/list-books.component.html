@@ -1,0 +1,8 @@
+<p>ListBooksComponent</p>
+<input type="text" placeholder="Search" (keyup)="filterItems($event)"/>
+<ul #bookList class="list" id="list_view">
+    {{ getListViewElement(bookList) }}
+</ul>
+<button #btnPaginator (click)="paginateList($event)">View More</button>
+{{ getPaginatorElement(btnPaginator) }}
+
